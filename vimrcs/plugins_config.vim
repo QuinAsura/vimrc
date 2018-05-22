@@ -52,7 +52,7 @@ nmap <leader>tp :TagbarTogglePause<cr>
 "This assumes your kernel directory has the word 'kernel'
 "let g:ycm_global_ycm_extra_conf='~/.vim_runtime/configs/ycm_extra_conf_kernel.py'
 "let g:ycm_global_ycm_extra_conf='~/.vim_runtime/configs/ycm_extra_conf.py'
-let g:ycm_show_diagnostics_ui = 0
+let g:ycm_show_diagnostics_ui = 1
 let g:ycm_confirm_extra_conf = 0
 
 """"""""""""""""""""""""""""""
@@ -92,26 +92,32 @@ let g:esearch = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-airline tmuxline config (force color)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:airline_theme='flatcolor'
+let g:airline_theme='jellybeans'
 let g:airline_powerline_fonts=1
 let g:airline_symbols = {}
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
-let g:airline_symbols.crypt = '🔒'
-let g:airline_symbols.branch = '¶'
-let g:airline_symbols.linenr = '☰'
-let g:airline_symbols.maxlinenr = '㏑'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.notexists = '∄'
-let g:airline_symbols.whitespace = 'Ξ'
+" let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
-let g:tmuxline_separators = {
-      \ 'left' : '',
-      \ 'left_alt': '',
-      \ 'right' : '',
-      \ 'right_alt' : '',
-      \ 'space' : ' '}
+" powerline symbols
+  let g:airline_left_sep = ''
+  let g:airline_left_alt_sep = ''
+  let g:airline_right_sep = ''
+  let g:airline_right_alt_sep = ''
+  let g:airline_symbols.branch = ''
+  let g:airline_symbols.readonly = ''
+  let g:airline_symbols.linenr = '☰'
+
+" let g:tmuxline_separators = {
+"       \ 'left' : '',
+"       \ 'left_alt': '',
+"       \ 'right' : '',
+"       \ 'right_alt' : '',
+"       \ 'space' : ' '}
+" let g:promptline_symbols = {
+"     \ 'left'       : '',
+"     \ 'dir_sep'    : ' / ',
+"     \ 'truncation' : '...',
+"     \ 'vcs_branch' : ' ',
+"     \ 'space'      : ''}
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Syntastic (syntax checker)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

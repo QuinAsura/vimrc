@@ -24,6 +24,7 @@
 set history=500
 
 " Enable filetype plugins
+set nocompatible
 filetype plugin on
 filetype indent on
 
@@ -155,10 +156,10 @@ set noswapfile
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
-set expandtab
+" set expandtab
 
 " Be smart when using tabs ;)
-set smarttab
+" set smarttab
 
 " 1 tab == 8 spaces
 set shiftwidth=8
@@ -343,8 +344,19 @@ map <leader>x :e ~/buffer.md<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
-
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Navigation
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>0 :tablast<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions

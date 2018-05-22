@@ -13,6 +13,7 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
+Plug 'edkolev/promptline.vim'
 
 Plug 'mkitt/tabline.vim'
 Plug 'scrooloose/nerdtree' 

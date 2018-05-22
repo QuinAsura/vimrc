@@ -34,12 +34,12 @@ if has("gui_running")
     " colorscheme alduin
 else
     " set background=dark
-    colorscheme flatcolor
+    colorscheme challenger_deep
 endif
 
 " VIM Reduce startup time hack
 set clipboard=exclude:.*
-set clipboard=unnamed
+" set clipboard=unnamed
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
